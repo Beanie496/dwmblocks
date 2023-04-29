@@ -89,6 +89,10 @@ void getcmds(int time)
 		if ((current->interval != 0 && time % current->interval == 0) || time == -1)
 			getcmd(current,statusbar[i]);
 	}
+	// hacky fix to make my current delimiter, "] [", work for the final command
+	// (i.e. "...] [<some command>]" instead of "...] [<some command>")
+	if ((current->interval != 0 && time % current->interval == 0) || time == -1)
+		strcat(statusbar[LENGTH(blocks) - 1], "]");
 }
 
 void getsigcmds(unsigned int signal)

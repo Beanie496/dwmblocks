@@ -1,7 +1,7 @@
 //Modify this file to change what commands output to your statusbar, and recompile using the make command.
 static const Block blocks[] = {
 		/*Icon*/   /*Command*/       /*Update Interval*/  /*Update Signal*/
-		{" ",      "dwmbl_mic.sh",   0,                   1},
+		{"[",      "dwmbl_mic.sh",   0,                   1},
 		{"",       "dwmbl_vol.sh",   0,                   2},
 		{"",       "dwmbl_cpubar",   5,                   3},
 		{"",       "dwmbl_mem.sh",   10,                  4},
@@ -10,5 +10,5 @@ static const Block blocks[] = {
 };
 
 //sets delimeter between status commands. NULL character ('\0') means no delimeter.
-static char delim[] = " | ";
+static char delim[] = "] [";
 static unsigned int delimLen = 5;

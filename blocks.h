@@ -4,7 +4,7 @@ static const Block blocks[] = {
 		{"[",      "dwmbl_mic.sh",   0,                   1},
 		{"",       "dwmbl_vol.sh",   0,                   2},
 		{"",       "dwmbl_cpubar",   5,                   3},
-		{"",       "dwmbl_tmp.sh",   10,                  4},
+		{"",       "dwmbl_tmp.sh",   5,                   4},
 		{"",       "dwmbl_mem.sh",   10,                  5},
 		{"",       "dwmbl_bat.sh",   30,                  6},
 		{"",       "dwmbl_dat.sh",   10,                  7},
